@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+ul {
+  padding: 0;
+}
+.hidden {
+  display: none;
+}
+.done {
+  text-decoration: line-through;
+}
+/* TODO: 상하로 페이지 줄어들 때 안의 div 요소들도 같이 줄어들게 하기 */
+/* TODO: 400px 이하일 때 clock 숨기기 */
+.main-view {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  height: 100vh;
+}
+#weather {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+#clock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10rem;
+  margin-bottom: 0;
+}
+#greeting {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  font-size: 3rem;
+  margin-bottom: 30px;
+}
+#login-form,
+#todo-form {
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#login-form input,
+#todo-form input {
+  border: none;
+  border-bottom: 2px solid white;
+  background-color: transparent;
+  text-align: center;
+  font-size: 2.5rem;
+}
+#login-form input:focus,
+#todo-form input:focus {
+  color: white;
+  border: none;
+  border-bottom: 2px solid white;
+  outline: transparent;
+}
+#todo-list {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  width: 400px;
+}
+#todo-list li {
+  list-style: none;
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 4px;
+}
+#todo-list li input[type='checkbox'] {
+  flex: 1 1 5%;
+}
+#todo-list li span {
+  flex: 1 1 85%;
+}
+#todo-list button {
+  border: none;
+  background-color: transparent;
+  flex: 1 1 10%;
+}
+#todo-list button:hover {
+  cursor: pointer;
+}
+#quote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-style: italic;
+}
